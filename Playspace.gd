@@ -4,7 +4,7 @@ extends Node2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-const CardSize = Vector2(125,175)*0.6
+const CardSize = Vector2(250,350)*0.6
 const CardBase = preload("res://Cards/CardBase.tscn")
 const PlayerHand = preload("res://Cards/Player_Hand.gd")
 const CardSlot = preload("res://Cards/CardSlot.tscn")
@@ -17,7 +17,7 @@ onready var Ver_rad = get_viewport().size.y*0.3
 var angle = 0
 var Card_Numb = 0
 var NumberCardsHand = -1
-var CardSpread = 0.002*CardSize.x
+var CardSpread = 0.001*CardSize.x
 var OvalAngleVector = Vector2()
 enum{
 	InHand
@@ -49,18 +49,18 @@ onready var HeightforCard = (CardSlotTotalHeight - (NumberRows - 1)*CardSlotyGap
 onready var WidthforCard = (CardSlotTotalWidth - (NumberColumns - 1)*CardSlotxGaps)/NumberColumns
 func _ready():
 	randomize()
-	for i in range(2): # both sets of player
-		for j in range(NumberColumns):
-			for k in range(NumberRows):
-				var NewSlot = CardSlot.instance()
-				NewSlot.rect_size = Vector2(CardSize.y,CardSize.x)
-				NewSlot.rect_scale *= (HeightforCard)/NewSlot.rect_size.y
-				var SlotShift = (WidthforCard - NewSlot.rect_size.x*NewSlot.rect_scale.x)/2
-				NewSlot.rect_position = Vector2(OuterxMargin + SlotShift + CardSlotBaseWidth,OuteryMargin) + k*Vector2(0,HeightforCard + CardSlotyGaps) \
-					+ j*Vector2(CardSlotTotalWidth/NumberColumns,0) + i*Vector2(CardSlotTotalWidth + MiddlexMargin,0)
-				
-				$CardSlots.add_child(NewSlot)
-				CardSlotEmpty.append(true)
+#	for i in range(2): # both sets of player
+#		for j in range(NumberColumns):
+#			for k in range(NumberRows):
+#				var NewSlot = CardSlot.instance()
+#				NewSlot.rect_size = Vector2(CardSize.y,CardSize.x)
+#				NewSlot.rect_scale *= (HeightforCard)/NewSlot.rect_size.y
+#				var SlotShift = (WidthforCard - NewSlot.rect_size.x*NewSlot.rect_scale.x)/2
+#				NewSlot.rect_position = Vector2(OuterxMargin + SlotShift + CardSlotBaseWidth,OuteryMargin) + k*Vector2(0,HeightforCard + CardSlotyGaps) \
+#					+ j*Vector2(CardSlotTotalWidth/NumberColumns,0) + i*Vector2(CardSlotTotalWidth + MiddlexMargin,0)
+#
+#				$CardSlots.add_child(NewSlot)
+#				CardSlotEmpty.append(true)
 	$Enemies/EnemyLeft.visible = true
 	$Enemies/EnemyLeft/VBoxContainer/ImageContainer/Image.flip_h = true
 	$Enemies/EnemyLeft.rect_scale *= CardSlotBaseWidth/$Enemies/EnemyLeft.rect_size.x

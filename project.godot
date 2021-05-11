@@ -8,16 +8,16 @@
 
 config_version=4
 
-_global_script_classes=[  ]
-_global_script_class_icons={
-
-}
-
 [application]
 
 config/name="Card Game Tutorial Part 7 (finish)"
 run/main_scene="res://Playspace.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1815
+window/size/height=989
 
 [input]
 

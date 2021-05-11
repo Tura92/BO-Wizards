@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Enemy.gd" type="Script" id=1]
 [ext_resource path="res://Bar.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Cards/Enemies/Enemy1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Cards/Enemies/Player1.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Cards/Card Borders etc/Gold_Border.png" type="Texture" id=4]
 
 [node name="Enemy" type="MarginContainer"]

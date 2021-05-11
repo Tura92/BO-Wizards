@@ -4,7 +4,7 @@
 [ext_resource path="res://Assets/Cards/Card Borders etc/cardborder.png" type="Texture" id=2]
 [ext_resource path="res://Assets/font/Comfortaa-Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assets/Cards/Card Borders etc/background shade.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Cards/Card Borders etc/Back_Texture.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Cards/Card Borders etc/BO-Logo-Card-Background.jpg" type="Texture" id=5]
 [ext_resource path="res://Assets/Cards/Card Borders etc/Gold_Border.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
@@ -222,6 +222,8 @@ texture_hover = ExtResource( 6 )
 expand = true
 
 [node name="CardBack" type="Sprite" parent="CardBase"]
+position = Vector2( 1.8877, 1.8877 )
+scale = Vector2( 1.01275, 1.01611 )
 texture = ExtResource( 5 )
 centered = false
 
@@ -230,5 +232,6 @@ visible = false
 z_index = 1
 texture = ExtResource( 6 )
 centered = false
+
 [connection signal="mouse_entered" from="CardBase/Focus" to="CardBase" method="_on_Focus_mouse_entered"]
 [connection signal="mouse_exited" from="CardBase/Focus" to="CardBase" method="_on_Focus_mouse_exited"]
