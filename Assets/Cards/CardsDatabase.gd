@@ -5,11 +5,11 @@ enum {Footman, Archer, SquadLeader, Warrior, Guardian, Knight, Mercenary, Spearm
 
 const DATA = {
 	Footman : 
-		["Units", 1, 1, 2, 1, "Footman", "Melee"],
+		["Units", 1, 1, 2, 85, "Verwirrter Prof", "Verursacht 3 Schaden"],
 	Archer :
-		["Units", 2, 1, 3, 2, "Archer", "Ranged,\nImmune to\nRetaliation"],
+		["Units", 2, 1, 3, 68, "Guter Hiwi", "Verursacht 2 Runden\nlang jede Runde\n2 Schaden"],
 	SquadLeader :
-		["Units", 2, 2, 3, 3, "Squad Leader", "Melee,\nGive all friendly\n+1 Attack and \nRetaliation"],
+		["Units", 2, 2, 3, 87, "Richtiger Otto", "Verursacht 1 Schaden\nund schützt den \nSpieler gegen 2 Schaden"],
 	Warrior :
 		["Units", 4, 0, 2, 3, "Rogue", "Melee,\nImmune to\nRetaliation"],
 	Guardian :
@@ -19,9 +19,9 @@ const DATA = {
 	Mercenary :
 		["Units", 2, 2, 0, 2, "Mercenary", "Melee,\nAlways Retaliates\nReturn to Supply when damaged\nor at start of next turn\nAfter played, increase\ncost by 1"],
 	Spearman :
-		["Units", 2, 2, 5, 3, "Spearman", "Melee or Ranged"],
+		["Units", 2, 2, 5, 70, "Brutaler Versager", "Lässt den Gegner\neine Runde aussetzen"],
 	Mentor :
-		["Units", 3, 0, 1, 2, "Mentor", "Melee,\nWhen played give\nfriendly unit +2 Attack\nand Retaliation"],
+		["Units", 3, 0, 1, 90, "Klassenbester", "Schützt den Spieler\ngegen 2 Schaden"],
 	Trebuchet :
 		["Events", 4, "Deal 6 damage\nto a unit"],
 	}

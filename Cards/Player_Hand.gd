@@ -1,1 +1,1 @@
-const CardList = ["Footman", "Footman", "Archer", "SquadLeader", "Spearman"]
+const CardList = ["Mentor", "Footman", "Archer", "SquadLeader", "Spearman"]

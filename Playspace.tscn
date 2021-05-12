@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Background/Background.jpg" type="Texture" id=1]
 [ext_resource path="res://Assets/Cards/Card Borders etc/Back_Texture.png" type="Texture" id=2]
@@ -8,16 +8,25 @@
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://DiscardPile.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Cards/Card Borders etc/BO-Logo-Card-Background.jpg" type="Texture" id=8]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=9]
+[ext_resource path="res://TurnBar.tscn" type="PackedScene" id=10]
 
 [node name="Playspace" type="Node2D"]
 script = ExtResource( 4 )
+
+[node name="TurnBar" type="Node" parent="."]
+
+[node name="Node2D" parent="TurnBar" instance=ExtResource( 10 )]
+position = Vector2( 611.309, 20.9763 )
 
 [node name="CardSlots" type="Node" parent="."]
 
 [node name="Enemies" type="Node" parent="."]
 
-[node name="EnemyLeft" parent="Enemies" instance=ExtResource( 6 )]
+[node name="Player" parent="Enemies" instance=ExtResource( 9 )]
 visible = false
+margin_right = 500.0
+margin_bottom = 557.0
 
 [node name="EnemyRight" parent="Enemies" instance=ExtResource( 6 )]
 visible = false
@@ -27,7 +36,7 @@ visible = false
 [node name="Cards" type="Node" parent="."]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 906.241, 498.623 )
+position = Vector2( 903.244, 498.623 )
 scale = Vector2( 0.25683, 0.246162 )
 texture = ExtResource( 1 )
 

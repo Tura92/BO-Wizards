@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Enemy1.png-ef1646c0c59237ee7187abcea85e90c2.stex"
+path="res://.import/Koehn1.jpg-05bfbcaefbb0a3dcdd1300801c19ac78.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/Enemies/Enemy1.png"
-dest_files=[ "res://.import/Enemy1.png-ef1646c0c59237ee7187abcea85e90c2.stex" ]
+source_file="res://Assets/Cards/Enemies/Koehn1.jpg"
+dest_files=[ "res://.import/Koehn1.jpg-05bfbcaefbb0a3dcdd1300801c19ac78.stex" ]
 
 [params]
 

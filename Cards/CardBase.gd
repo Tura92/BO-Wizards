@@ -46,8 +46,8 @@ func _ready():
 	$Bars/TopBar/Name/CenterContainer/Name.text = str(Name)
 	$Bars/TopBar/Cost/CenterContainer/Cost.text = str(Cost)
 	$Bars/SpecialText/Text/CenterContainer/Type.text = str(SpecialText)
-	$Bars/BottomBar/Health/CenterContainer/Health.text = str(Health)
-	$Bars/BottomBar/Attack/CenterContainer/AandR.text = str(Attack,'/',Retaliation)
+	$Bars/BottomBar/Health/CenterContainer/Health.text = ""#str(Health)
+	$Bars/BottomBar/Attack/CenterContainer/AandR.text = ""#str(Attack,'/',Retaliation)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 var MegaZooming = false

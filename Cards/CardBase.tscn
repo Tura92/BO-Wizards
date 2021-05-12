@@ -222,7 +222,8 @@ texture_hover = ExtResource( 6 )
 expand = true
 
 [node name="CardBack" type="Sprite" parent="CardBase"]
-position = Vector2( 1.8877, 1.8877 )
+visible = false
+position = Vector2( 1.86987, 0.567719 )
 scale = Vector2( 1.01275, 1.01611 )
 texture = ExtResource( 5 )
 centered = false

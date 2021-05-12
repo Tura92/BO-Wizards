@@ -61,11 +61,11 @@ func _ready():
 #
 #				$CardSlots.add_child(NewSlot)
 #				CardSlotEmpty.append(true)
-	$Enemies/EnemyLeft.visible = true
-	$Enemies/EnemyLeft/VBoxContainer/ImageContainer/Image.flip_h = true
-	$Enemies/EnemyLeft.rect_scale *= CardSlotBaseWidth/$Enemies/EnemyLeft.rect_size.x
-	$Enemies/EnemyLeft.rect_position = Vector2(OuterxMargin + CardSlotBaseWidth/2,CardSlotTotalHeight/2) \
-		- $Enemies/EnemyLeft.rect_size*$Enemies/EnemyLeft.rect_scale/2
+	$Enemies/Player.visible = true
+	$Enemies/Player/VBoxContainer/ImageContainer/Image.flip_h = true
+	$Enemies/Player.rect_scale *= CardSlotBaseWidth/$Enemies/Player.rect_size.x
+	$Enemies/Player.rect_position = Vector2(OuterxMargin + CardSlotBaseWidth/2,CardSlotTotalHeight/2) \
+		- $Enemies/Player.rect_size*$Enemies/Player.rect_scale/2
 	$Enemies/EnemyRight.visible = true
 	$Enemies/EnemyRight.rect_scale *= CardSlotBaseWidth/$Enemies/EnemyRight.rect_size.x
 	$Enemies/EnemyRight.rect_position = Vector2(ViewPortSize.x - OuterxMargin - CardSlotBaseWidth/2,CardSlotTotalHeight/2) \
